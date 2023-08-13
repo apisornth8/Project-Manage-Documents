@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TMCL SERVICE COMPANY LIMITED</title>
+</head>
+
+<body>
+    <!-- HEAD -->
+    <!-- LOGO PICTURE -->
+    <img src="/Picture/LOGO.png" style="display: inline-block;padding-left: 10%;">
+    <!-- HEAD -->
+    <span>
+        <h4
+            style="padding-left: 10%;position: sticky;display:inline; position: absolute; right: 100px;color:rgb(39, 26, 135)">
+            ชยกฤต บวรฤทธิไกร </h4>
+        <button class="btn default" style="position: absolute; right: 320px; margin-top: 30px;text-decoration-line:underline;
+        text-decoration-color: rgb(30, 48, 243);color:rgb(108, 102, 102)"> ข้อมูลโปรไฟล์ </button>
+        <button class="btn default" style="position: absolute; right: 200px; margin-top: 30px;text-decoration-line:underline;
+        text-decoration-color: rgb(245, 245, 23);color:rgb(108, 102, 102)"> เปลี่ยนรหัสผ่าน </button>
+        <button class="btn default" style="position: absolute; right: 90px; margin-top: 30px; text-decoration-line:underline;
+        text-decoration-color: rgb(236, 11, 11);color:rgb(108, 102, 102)"> ออกจากระบบ </button>
+    </span>
+    <div>
+        <strong style="padding-left: 10%;position: sticky; font-size: 20px;color:darkblue"> ลงทะเบียนนายจ้าง </strong>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-25">
+                <label for="fname">เลขประจำตัวนายจ้าง</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="เลข 13 หลัก">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="lname">ประเภทกิจการ</label>
+                <span style="color: red;">*</span>
+            </div>
+            <div class="col-75">
+                <select id="typebis" name="typebis">
+                    <option>---- โปรดเลือกประเภทกิจการ ----</option>
+                    <option>ประมง</option>
+                    <option>เกษตรและปศุสัตว์</option>
+                    <option>กิจการก่อสร้าง</option>
+                    <option>ผู้รับใช้ในบ้าน</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="fname">ชื่อนายจ้าง</label>
+                <span style="color: red;">*</span>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="ชื่อ และ นามสกุล">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="fname">เลขที่</label>
+                <span style="color: red;">*</span>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname"  placeholder="บ้านเลขที่">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="fname">หมู่ที่</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname"  placeholder="เลขหมู่ที่">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="fname">ซอย</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname"  placeholder="ซอย">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="fname">ถนน</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname"  placeholder="ถนน">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="lname">จังหวัด</label>
+                <span style="color: red;">*</span>
+            </div>
+            <div class="col-75">
+                <select id="typebis" name="typebis">
+                    <option>---- โปรดเลือกจังหวัด ----</option>
+                    <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+                    <option value="กระบี่">กระบี่ </option>
+                    <option value="กาญจนบุรี">กาญจนบุรี </option>
+                    <option value="กาฬสินธุ์">กาฬสินธุ์ </option>
+                    <option value="กำแพงเพชร">กำแพงเพชร </option>
+                    <option value="ขอนแก่น">ขอนแก่น</option>
+                    <option value="จันทบุรี">จันทบุรี</option>
+                    <option value="ฉะเชิงเทรา">ฉะเชิงเทรา </option>
+                    <option value="ชัยนาท">ชัยนาท </option>
+                    <option value="ชัยภูมิ">ชัยภูมิ </option>
+                    <option value="ชุมพร">ชุมพร </option>
+                    <option value="ชลบุรี">ชลบุรี </option>
+                    <option value="เชียงใหม่">เชียงใหม่ </option>
+                    <option value="เชียงราย">เชียงราย </option>
+                    <option value="ตรัง">ตรัง </option>
+                    <option value="ตราด">ตราด </option>
+                    <option value="ตาก">ตาก </option>
+                    <option value="นครนายก">นครนายก </option>
+                    <option value="นครปฐม">นครปฐม </option>
+                    <option value="นครพนม">นครพนม </option>
+                    <option value="นครราชสีมา">นครราชสีมา </option>
+                    <option value="นครศรีธรรมราช">นครศรีธรรมราช </option>
+                    <option value="นครสวรรค์">นครสวรรค์ </option>
+                    <option value="นราธิวาส">นราธิวาส </option>
+                    <option value="น่าน">น่าน </option>
+                    <option value="นนทบุรี">นนทบุรี </option>
+                    <option value="บึงกาฬ">บึงกาฬ</option>
+                    <option value="บุรีรัมย์">บุรีรัมย์</option>
+                    <option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์ </option>
+                    <option value="ปทุมธานี">ปทุมธานี </option>
+                    <option value="ปราจีนบุรี">ปราจีนบุรี </option>
+                    <option value="ปัตตานี">ปัตตานี </option>
+                    <option value="พะเยา">พะเยา </option>
+                    <option value="พระนครศรีอยุธยา">พระนครศรีอยุธยา </option>
+                    <option value="พังงา">พังงา </option>
+                    <option value="พิจิตร">พิจิตร </option>
+                    <option value="พิษณุโลก">พิษณุโลก </option>
+                    <option value="เพชรบุรี">เพชรบุรี </option>
+                    <option value="เพชรบูรณ์">เพชรบูรณ์ </option>
+                    <option value="แพร่">แพร่ </option>
+                    <option value="พัทลุง">พัทลุง </option>
+                    <option value="ภูเก็ต">ภูเก็ต </option>
+                    <option value="มหาสารคาม">มหาสารคาม </option>
+                    <option value="มุกดาหาร">มุกดาหาร </option>
+                    <option value="แม่ฮ่องสอน">แม่ฮ่องสอน </option>
+                    <option value="ยโสธร">ยโสธร </option>
+                    <option value="ยะลา">ยะลา </option>
+                    <option value="ร้อยเอ็ด">ร้อยเอ็ด </option>
+                    <option value="ระนอง">ระนอง </option>
+                    <option value="ระยอง">ระยอง </option>
+                    <option value="ราชบุรี">ราชบุรี</option>
+                    <option value="ลพบุรี">ลพบุรี </option>
+                    <option value="ลำปาง">ลำปาง </option>
+                    <option value="ลำพูน">ลำพูน </option>
+                    <option value="เลย">เลย </option>
+                    <option value="ศรีสะเกษ">ศรีสะเกษ</option>
+                    <option value="สกลนคร">สกลนคร</option>
+                    <option value="สงขลา">สงขลา </option>
+                    <option value="สมุทรสาคร">สมุทรสาคร </option>
+                    <option value="สมุทรปราการ">สมุทรปราการ </option>
+                    <option value="สมุทรสงคราม">สมุทรสงคราม </option>
+                    <option value="สระแก้ว">สระแก้ว </option>
+                    <option value="สระบุรี">สระบุรี </option>
+                    <option value="สิงห์บุรี">สิงห์บุรี </option>
+                    <option value="สุโขทัย">สุโขทัย </option>
+                    <option value="สุพรรณบุรี">สุพรรณบุรี </option>
+                    <option value="สุราษฎร์ธานี">สุราษฎร์ธานี </option>
+                    <option value="สุรินทร์">สุรินทร์ </option>
+                    <option value="สตูล">สตูล </option>
+                    <option value="หนองคาย">หนองคาย </option>
+                    <option value="หนองบัวลำภู">หนองบัวลำภู </option>
+                    <option value="อำนาจเจริญ">อำนาจเจริญ </option>
+                    <option value="อุดรธานี">อุดรธานี </option>
+                    <option value="อุตรดิตถ์">อุตรดิตถ์ </option>
+                    <option value="อุทัยธานี">อุทัยธานี </option>
+                    <option value="อุบลราชธานี">อุบลราชธานี</option>
+                    <option value="อ่างทอง">อ่างทอง </option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="fname">อำเภอ/เขต</label>
+                <span style="color: red;">*</span>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname"  placeholder="อำเภอ/เขต">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="fname">ตำบล/แขวง</label>
+                <span style="color: red;">*</span>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname"  placeholder="ตำบล/แขวง">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="fname">รหัสไปรษณีย์</label>
+                <span style="color: red;">*</span>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname"  placeholder="รหัสไปรษณีย์">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="fname">โทรศัพท์</label>
+                <span style="color: red;">*</span>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname"  placeholder="โทรศัพท์">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="fname">อีเมลล์</label>
+                <span style="color: red;">*</span>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname"  placeholder="อีเมลล์">
+            </div>
+        </div>
+        <br>
+        <div class="row" style="justify-content: center;">
+            <a href="Attachment_Employer.html"><input type="button" value="หน้าต่อไป" style="margin-right: 10px;" class="btn btn-primary mb-2"></a>
+            <a href="Landing_Page.html"><button type="button" class="btn btn-secondary mb-2">หน้าแรก</button></a>
+        </div>
+        </form>
+    </div>
+</body>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    input[type=text],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+    }
+
+    label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+    }
+
+    input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+    .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+    }
+
+    .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+
+        .col-25,
+        .col-75,
+        input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+        }
+    }
+</style>
+
+</html>
